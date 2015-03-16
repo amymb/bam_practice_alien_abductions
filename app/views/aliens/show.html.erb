@@ -1,0 +1,6 @@
+<%="Species: #{@alien.species}"%>
+<%="Planet: #{@alien.planet}"%>
+<%=link_to "#{@alien.abductions.count} Abductions", alien_abductions_path(@alien)%>
+<%=link_to "Index", root_path%>
+<%=link_to "Edit", edit_alien_path%>
+<%=link_to "Delete", @alien, method: :delete%>

@@ -1,0 +1,8 @@
+List of Abductions by Martians
+<%@alien.abductions.each do |abduction|%>
+<%=link_to "#{abduction.person.first_name} #{abduction.person.last_name} on #{abduction.date.strftime("%m/%d/%Y")}", alien_abduction_path(@alien, abduction)%>
+<%= "with #{abduction.butt_stuff}"%>
+<%end%>
+
+<%=link_to "Back", @alien%>
+<%=link_to "New Abduction", new_alien_abduction_path(@alien)%>
